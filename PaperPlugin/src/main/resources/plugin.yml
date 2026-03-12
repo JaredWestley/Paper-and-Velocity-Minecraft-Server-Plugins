@@ -1,0 +1,48 @@
+name: AtomHub
+prefix: AtomHub
+description: AtomHub Paper Plugin
+version: '1.0.0'
+main: me.atomoyo.atomhub.AtomHub
+api-version: '1.21.10'
+author: Atomoyo
+load: POSTWORLD
+
+commands:
+  atomhub:
+    description: AtomHub admin commands
+    usage: /<command> <admin|stopserver|restartserver|infoserver|player|maintenancemode|reload>
+    permission: atomhub.admin
+    permission-message: "§cYou do not have permission to use AtomHub commands."
+  arena:
+    description: Manage procedural PvP arenas
+    usage: /<command> <create|delete|join|list|info|presets>
+    permission: atomhub.arena.use
+    permission-message: "§cYou don't have permission to use arena commands!"
+
+permissions:
+  atomhub.admin:
+    description: Allows access to AtomHub admin panel
+    default: op
+  atomhub.bypass.maintenance:
+    description: Allows joining during maintenance mode
+    default: op
+
+  # Arena permissions
+  atomhub.arena.use:
+    description: Allows use of arena commands
+    default: op
+  atomhub.arena.create:
+    description: Allows creating arenas
+    default: op
+  atomhub.arena.delete:
+    description: Allows deleting arenas
+    default: op
+  atomhub.arena.manage:
+    description: Allows managing arena players
+    default: op
+  atomhub.arena.start:
+    description: Allows starting arena matches
+    default: op
+  atomhub.arena.join:
+    description: Allows joining arenas
+    default: true

@@ -1,0 +1,48 @@
+# AtomHub Configuration
+# Database Settings
+database:
+  # MySQL host address
+  host: "localhost"
+  # MySQL port
+  port: "3306"
+  # Database name
+  database: "database"
+  # Database username
+  username: "username"
+  # Database password
+  password: "password"
+  # Use SSL for connection (true/false)
+  useSSL: false
+
+# Plugin Settings
+plugin:
+  # Server name for network identification
+  server-name: "survival"
+  # Log debug messages to console
+  debug: false
+  # Cooldown between actions in seconds
+  cooldown: 5
+
+# Maintenance Mode
+maintenance:
+  enabled: false
+  message: "§cServer is in maintenance mode\n\n§7Please check back later!"
+  whitelist:
+    - ""
+
+# Messages
+messages:
+  ban: "§cYou are banned from the network.\n§7Reason: §f{reason}"
+  kick: "§cYou were kicked from the network.\n§7Reason: §f{reason}"
+  mute: "§cYou have been muted network-wide.\n§7Reason: §f{reason}"
+  freeze: "§cYou have been frozen by an administrator."
+  unfreeze: "§aYou have been unfrozen."
+
+# GUI Settings
+gui:
+  # Titles for menus
+  main-title: "§8Admin Panel"
+  player-title: "§8Player: §f{player}"
+  server-title: "§8Server Management"
+  network-title: "§8Network Management"
+  world-title: "§8World Management"
